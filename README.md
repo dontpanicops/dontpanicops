@@ -11,6 +11,8 @@ I run Linux infrastructure for web services: monitoring, backups with tested res
 - Monitoring: Prometheus with exporters and mtail, 13 Grafana dashboards, 25 Uptime Kuma checks that verify page content, not just HTTP 200.
 - Staging deploys from GitLab CI: shell runner, `flock` against parallel runs, migrations, read-only overlay on production media.
 
+Anonymised scripts from that work: **[ops-recipes](https://github.com/dontpanicops/ops-recipes)** — CrowdSec POST-flood scenario, SSH behind fail2ban, ModSecurity audit log without passwords, nginx cache-bust block, PHP session OOM fixes.
+
 **[runsweep](https://github.com/runsweep/runsweep)** — after a supply-chain incident, tells you which GitHub Actions runs were hit and which secrets to rotate first. npm, PyPI and compromised actions; every job gets AFFECTED, POSSIBLE, UNCHECKED or CLEAN with the log line as evidence.
 
 - Go CLI, signed releases with build provenance (`gh attestation verify`)
